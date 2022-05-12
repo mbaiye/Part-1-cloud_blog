@@ -9,11 +9,12 @@ LABEL maintainer="Moyosore Baiye"
 COPY . /app
 #  defines the working directory within the container
 WORKDIR /app
+EXPOSE 3111
 # run commands within the container. 
 # For example, invoke a pip command 
 # to install dependencies defined in the requirements.txt file. 
 RUN pip install -r requirements.txt
+RUN python init_db.py
 # provide a command to run on container start. 
 # For example, start the `app.py` application.
-CMD ["python", "init_db.py"]
 CMD [ "python", "app.py" ]
