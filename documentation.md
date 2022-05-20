@@ -77,7 +77,7 @@ jobs:
 After you commit the change, the workflow should be triggered automatically i.e build and push to dockerhub. Below is the screenshot of the built images on dockerhub.<br/>
 Below are a few screenshots. Proper documentation would be done on them also.<br/>
 <hr/>
-- Build and pushed image in dockerhub<br/>
+- Built and pushed image in dockerhub<br/>
 
 
 ![GitHub Dark](/assets/images/dockerhub.png)
@@ -100,7 +100,7 @@ This threw an error and the screenshot below shows the error.<br/>
 
 ![GitHub Dark](/assets/images/error.png)
 
-Since a colleague(Bright Asechemie) already discovered that this error can be fixed by updating the versions of dependencies used in the requirements.txt file to Flask==2.1.0 and Werkzeug==2.0.0. Did that and rebuilt and re-ran the container and viola. <br/>
+So i discovered that this error can be fixed by updating the versions of dependencies used in the requirements.txt file to Flask==2.1.0 and Werkzeug==2.0.0. Did that and rebuilt and re-ran the container and viola. <br/>
 Screenshot below shows the running container<br/>
 
 ![GitHub Dark](/assets/images/finalrun.png)
